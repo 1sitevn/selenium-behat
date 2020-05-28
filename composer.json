@@ -1,0 +1,38 @@
+{
+  "name": "onesite/selenium-behat",
+  "description": "Onesite Selenium Behat",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "1Site.vn",
+      "email": "hotro@1site.vn",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "behat/behat": "^3.6",
+    "behat/mink": "^1.8",
+    "behat/mink-extension": "^2.3",
+    "behat/mink-goutte-driver": "^1.2",
+    "behat/mink-selenium2-driver": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "OneSite\\SeleniumBehat\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OneSite\\SeleniumBehat\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x.x-dev"
+    }
+  }
+}

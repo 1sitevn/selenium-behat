@@ -1,0 +1,18 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium2
+      goutte: ~
+      selenium2:
+        # chrome
+        wd_host: "http://127.0.0.1:4444/wd/hub"
+        # chrome
+        capabilities: { "browserName": "chrome", "browser": "chrome", "version":  "25", 'chrome': {'switches':['--no-sandbox']}}
+      base_url: 'https://www.google.com'
+      # chrome
+      browser_name: chrome
+      files_path: 'files'
+  suites:
+    default:
+      contexts:
+        - FeatureContext
