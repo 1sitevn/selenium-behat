@@ -15,4 +15,5 @@ default:
   suites:
     default:
       contexts:
-        - FeatureContext
+        - OneSite\SeleniumBehat\FeatureContext:
+            screen_shot_path: screenshots

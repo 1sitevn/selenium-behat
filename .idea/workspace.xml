@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8de4bafa-30c7-4ef9-bcf3-efef51986ef2" name="Default Changelist" comment="" />
+    <list default="true" id="8de4bafa-30c7-4ef9-bcf3-efef51986ef2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/selenium-behat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/selenium-behat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/behat.yml" beforeDir="false" afterPath="$PROJECT_DIR$/behat.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,11 +101,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/screenshots" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
@@ -126,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590648841852</updated>
       <workItem from="1590648843433" duration="3594000" />
-      <workItem from="1590652659896" duration="2792000" />
+      <workItem from="1590652659896" duration="4556000" />
     </task>
     <servers />
   </component>
@@ -134,6 +142,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1590661258256">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1590661258256" />
     <state x="229" y="73" key="SettingsEditor" timestamp="1590652597829">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

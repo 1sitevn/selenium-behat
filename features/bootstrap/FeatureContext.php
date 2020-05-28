@@ -1,9 +1,13 @@
 <?php
 
+namespace OneSite\SeleniumBehat;
+
 use Behat\Behat\Context\Context;
+use Behat\Behat\Hook\Scope\AfterStepScope;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 use Behat\Behat\Tester\Exception\PendingException;
+use Behat\Mink\Driver\Selenium2Driver;
 use Behat\MinkExtension\Context\RawMinkContext;
 
 /**
@@ -12,14 +16,17 @@ use Behat\MinkExtension\Context\RawMinkContext;
 class FeatureContext extends RawMinkContext
 {
     /**
-     * Initializes context.
-     *
-     * Every scenario gets its own context instance.
-     * You can also pass arbitrary arguments to the
-     * context constructor through behat.yml.
+     * @var
      */
-    public function __construct()
+    private $screenShotPath;
+
+    /**
+     * FeatureContext constructor.
+     * @param $screen_shot_path
+     */
+    public function __construct($screen_shot_path)
     {
+        $this->screenShotPath = $screen_shot_path;
     }
 
     /**
@@ -69,6 +76,37 @@ class FeatureContext extends RawMinkContext
 
         if ($value != $arg1) {
             throw new \Exception(sprintf("The page '%s' does not same contain '%s'", $this->getSession()->getCurrentUrl(), $arg1));
+        }
+    }
+
+    /**
+     * Take screen-shot when step fails. Works only with Selenium2Driver.
+     *
+     * @AfterStep
+     * @param AfterStepScope $scope
+     */
+    public function takeScreenshotAfterFailedStep(AfterStepScope $scope)
+    {
+        if (99 === $scope->getTestResult()->getResultCode()) {
+            $driver = $this->getSession()->getDriver();
+
+            if (!$driver instanceof Selenium2Driver) {
+                return;
+            }
+
+            if (!is_dir($this->screenShotPath)) {
+                mkdir($this->screenShotPath, 0777, true);
+            }
+
+            $filename = sprintf(
+                '%s_%s_%s.%s',
+                $this->getMinkParameter('browser_name'),
+                date('Ymd') . '-' . date('His'),
+                uniqid('', true),
+                'png'
+            );
+
+            $this->saveScreenshot($filename, $this->screenShotPath);
         }
     }
 }
