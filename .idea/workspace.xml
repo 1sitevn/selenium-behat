@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de4bafa-30c7-4ef9-bcf3-efef51986ef2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/selenium-behat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/selenium-behat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/behat.yml" beforeDir="false" afterPath="$PROJECT_DIR$/behat.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +130,9 @@
       <option name="presentableId" value="Default" />
       <updated>1590648841852</updated>
       <workItem from="1590648843433" duration="3594000" />
-      <workItem from="1590652659896" duration="4556000" />
+      <workItem from="1590652659896" duration="4782000" />
+      <workItem from="1590677102240" duration="94000" />
+      <workItem from="1591413848853" duration="1130000" />
     </task>
     <servers />
   </component>
