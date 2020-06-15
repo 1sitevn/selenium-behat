@@ -81,7 +81,7 @@ class LoginFeatureContext extends RawMinkContext
             ->find('css', 'input[name=otp_code]')
             ->setValue($arg1);
 
-        sleep(3);
+        sleep(1);
     }
 
     /**
@@ -89,7 +89,7 @@ class LoginFeatureContext extends RawMinkContext
      */
     public function andIPressTiepTucInOtpVerifyPage()
     {
-        sleep(3);
+        sleep(1);
     }
 
     /**
@@ -97,7 +97,7 @@ class LoginFeatureContext extends RawMinkContext
      */
     public function iShouldSeeVerifyPasswordPage()
     {
-        sleep(3);
+        sleep(1);
     }
 
     /**
@@ -120,7 +120,7 @@ class LoginFeatureContext extends RawMinkContext
     {
         $this->getSession()
             ->getPage()
-            ->find('css', 'button.btn_login')
+            ->find('css', '.password_form button.btn_login')
             ->click();
     }
 
