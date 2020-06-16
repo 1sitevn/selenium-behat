@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de4bafa-30c7-4ef9-bcf3-efef51986ef2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/selenium-behat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/selenium-behat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/behat.yml" beforeDir="false" afterPath="$PROJECT_DIR$/behat.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +91,8 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/elkan/behatformatter" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cWeagX1etZF5CuNnbxREPFWAH5" />
@@ -101,11 +105,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/screenshots" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/features/bootstrap" />
+      <recent name="$PROJECT_DIR$/features" />
       <recent name="$PROJECT_DIR$/screenshots" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources" />
@@ -134,7 +143,11 @@
       <option name="presentableId" value="Default" />
       <updated>1590648841852</updated>
       <workItem from="1590648843433" duration="3594000" />
-      <workItem from="1590652659896" duration="4556000" />
+      <workItem from="1590652659896" duration="4782000" />
+      <workItem from="1590677102240" duration="94000" />
+      <workItem from="1591413848853" duration="1130000" />
+      <workItem from="1592208531059" duration="3176000" />
+      <workItem from="1592284119962" duration="1865000" />
     </task>
     <servers />
   </component>
@@ -146,6 +159,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1590661258256" />
+    <state x="537" y="153" key="RollbackChangesDialog" timestamp="1592209966158">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="537" y="153" key="RollbackChangesDialog/0.23.1440.827@0.23.1440.827" timestamp="1592209966158" />
     <state x="229" y="73" key="SettingsEditor" timestamp="1590652597829">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

@@ -12,8 +12,22 @@ default:
       # chrome
       browser_name: chrome
       files_path: 'files'
+    elkan\BehatFormatter\BehatFormatterExtension:
+      projectName: BehatTest
+      name: html
+      renderer: Twig,Behat2
+      file_name: Index
+      print_args: true
+      print_outp: true
+      loop_break: true
+      show_tags: true
   suites:
     default:
       contexts:
-        - OneSite\SeleniumBehat\FeatureContext:
-            screen_shot_path: screenshots
+        #- OneSite\SeleniumBehat\FeatureContext:
+        #    screen_shot_path: screenshots
+        - OneSite\SeleniumBehat\LoginFeatureContext:
+            screen_shot_path: storage/screenshots/
+  formatters:
+    html:
+      output_path: storage/reports/
