@@ -9,12 +9,11 @@ use Behat\Gherkin\Node\TableNode;
 use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Mink\Driver\Selenium2Driver;
 use Behat\MinkExtension\Context\RawMinkContext;
-use elkan\BehatFormatter\Context\BehatFormatterContext;
 
 /**
  * Defines application features from the specific context.
  */
-class LoginFeatureContext extends BehatFormatterContext
+class LoginFeatureContext extends RawMinkContext
 {
     /**
      * @var
@@ -130,7 +129,7 @@ class LoginFeatureContext extends BehatFormatterContext
      */
     public function iShouldSeeHomePage()
     {
-        sleep(25);
+        sleep(5);
     }
 
     /**

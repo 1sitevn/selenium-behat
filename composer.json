@@ -11,7 +11,7 @@
   ],
   "require": {
     "php": "^7.1",
-    "elkan/behatformatter": "^1.2"
+    "elkan/behatformatter": "1.2.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.0",
